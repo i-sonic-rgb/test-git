@@ -33,11 +33,15 @@ def quicksort(l, r, nums):
 	return nums
 
 
+def print_matrix(example, result):
+	print(quicksort(0, len(example)-1, example))
+
+
 example = [4, 5, 1, 2, 3]
 result = [1, 2, 3, 4, 5]
-print(quicksort(0, len(example)-1, example))
+print_matrix(example, result)
 
 example = [2, 5, 6, 1, 4, 6, 2, 4, 7, 8]
 result = [1, 2, 2, 4, 4, 5, 6, 6, 7, 8]
 # As you can see, it works for duplicates too
-print(quicksort(0, len(example)-1, example))
+print_matrix(example, result)
