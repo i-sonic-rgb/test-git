@@ -35,11 +35,6 @@ def quicksort(l, r, nums):
 	return nums
 
 def random_array(length: int):
-    result = []
-    for i in range(length + 1):
-        result.append(random())
-
-def random_array(length: int):
     """
     Generating an array with random numbers.
     """
