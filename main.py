@@ -55,4 +55,3 @@ if __name__ == '__main__':
     # As you can see, it works for duplicates too
     print_matrix(quicksort(0, len(example)-1, example))
     print_matrix(result)
-
