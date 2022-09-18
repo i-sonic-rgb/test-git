@@ -7,7 +7,7 @@
 
 
 def partition(l, r, nums):
-	# Last element will be the pivot and the first element the pointer
+	# Последним элементом будет точка поворота, а первым элементом - указатель
 	pivot, ptr = nums[r], l
 	for i in range(l, r):
 		if nums[i] <= pivot:
