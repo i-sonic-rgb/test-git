@@ -5,6 +5,8 @@
 # At the very end of partition() function, the pointer is swapped with the pivot
 # to come up with a "sorted" nums relative to the pivot
 
+from random import randint
+
 
 def partition(l, r, nums):
 	# Last element will be the pivot and the first element the pointer
@@ -32,6 +34,11 @@ def quicksort(l, r, nums):
 		quicksort(pi+1, r, nums) # Recursively sorting the right values
 	return nums
 
+def random_array(length: int):
+    """
+    Generating an array with random numbers.
+    """
+    return [randint(1, 100) for i in range(length)]
 
 example = [4, 5, 1, 2, 3]
 result = [1, 2, 3, 4, 5]
